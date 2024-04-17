@@ -1,8 +1,6 @@
 ```c++
 
-vector<ll> z_function() {
-    string s;
-    cin >> s;
+vector<ll> z_function(string& s) {
     ll n = s.size(), l = 0, r = 0; // Z-block = s[l; r)
     vector<ll> z(n, 0);
     for (ll i = 1; i < n; i++) {
