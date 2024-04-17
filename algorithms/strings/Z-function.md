@@ -1,10 +1,6 @@
 ```c++
-#include <iostream>
-#include <vector>
-using namespace std;
-using ll = long long;
- 
-int main() {
+
+vector<ll> z_function() {
     string s;
     cin >> s;
     ll n = s.size(), l = 0, r = 0; // Z-block = s[l; r)
@@ -21,10 +17,7 @@ int main() {
             r = i + z[i];
         }
     }
-    for (auto& i : z) {
-        cout << i << ' ';
-    }
-    return 0;
+    return z;
 }
 
 ```
